@@ -154,8 +154,8 @@ while 1:
          f = open('/dev/shm/runcommand.log', 'r')
 #      except FileNotFoundError:
       except IOError:
-         mylcd.lcd_display_string( "You should play", 1, 0 )
-         mylcd.lcd_display_string( "a game first!!", 2, 0 )
+         mylcd.lcd_display_string( "Let the", 1, 0 )
+         mylcd.lcd_display_string( "Game Begin!!!", 2, 3 )
          sleep(3)
          break
          pass
@@ -165,17 +165,23 @@ while 1:
          systemMap = {
             "fba":"FinalBurn Alpha",
             "gba":"GameBoy Advance",
+            "nds":"Nintendo DS",
             "kodi":"KODI",
             "mame-mame4all":"MAME4ALL",
             "mame-advmame":"AdvanceMAME",
             "mame-libretro":"lr-MAME",
+            "mastersystem":"Master System",
+            "megadrive":"Mega Drive",
             "msx":"MSX",
             "nes":"Famicom",   # Nintendo Entertainment System
+            "snes":"Super Famicom", # Super Nintendo Entertainment System
+            "n64":"Nintendo 64",
             "psp":"PS Portable",    # PlayStation Portable
             "psx":"Play Station",
+            "pc":"MS Dos",
             "ports":"Ports",
-            "snes":"Super Famicom", # Super Nintendo Entertainment System
             "notice":"TURN OFF",
+            "captain":"I Can Do This"
          }
          system = systemMap.get(system)
          rom = f.readline()
