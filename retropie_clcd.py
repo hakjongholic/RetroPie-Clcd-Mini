@@ -75,8 +75,8 @@ mylcd.lcd_display_string("Hakjong Wolrd", 2, 0)
 sleep(5) # 5 sec delay
 mylcd.lcd_clear()
 
-mylcd.lcd_display_string("ORIGAMI MINI", 1, 0)
-mylcd.lcd_display_string("STATION", 2, 0)
+mylcd.lcd_display_string("Origami Mini", 1, 0)
+mylcd.lcd_display_string("Station", 2, 0)
 sleep(5) # 5 sec delay
 mylcd.lcd_clear()
 
